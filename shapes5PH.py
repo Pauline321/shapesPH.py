@@ -1,8 +1,12 @@
 #shapes5PH.py by Pauline Harrell
 from graphics import*
 
-bTriWin = GraphWin("Blue Triangle", 700, 700)
-bTriWin.setCoords (0,0,700,700)
+winX = 700
+winY = 700
+
+
+bTriWin = GraphWin("Blue Triangle", winX, winY)
+bTriWin.setCoords (0,0,winX,winY)
 
 bTri = Polygon(Point(20,25),Point (70,120),Point(110,25))
 bTri.setFill(color_rgb(30,30,230))
@@ -20,6 +24,7 @@ rOval = Oval(Point(20,575), Point(220,675))
 rOval.setFill(color_rgb(255,10,10))
 rOval.draw(bTriWin)
 
+yDia = Polygon(Point(___, winY/2), Point(winX/2,  ), Point(  ,winY/2), Point(winX/2,  ))
 
 
 
