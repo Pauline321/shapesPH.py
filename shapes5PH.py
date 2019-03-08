@@ -16,12 +16,13 @@ pRectangle = Rectangle(Point(460,100),Point (680,15))
 pRectangle.setFill(color_rgb(100,0,150))
 pRectangle.draw(bTriWin)
 
-pRectangle = Rectangle(Point(100,400),Point (15,400))
-pRectangle.setFill(color_rgb(600,0,200))
-pRectangle.draw(bTriWin)
+rOval = Oval(Point(20,575), Point(220,675))
+rOval.setFill(color_rgb(255,10,10))
+rOval.draw(bTriWin)
+
+
 
 
 
 bTriWin.getMouse()
-
 bTriWin.close()
