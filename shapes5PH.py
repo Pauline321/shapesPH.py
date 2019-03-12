@@ -3,7 +3,7 @@ from graphics import*
 
 winX = 700
 winY = 700
-
+diaSz = 50
 
 bTriWin = GraphWin("Blue Triangle", winX, winY)
 bTriWin.setCoords (0,0,winX,winY)
@@ -24,10 +24,12 @@ rOval = Oval(Point(20,575), Point(220,675))
 rOval.setFill(color_rgb(255,10,10))
 rOval.draw(bTriWin)
 
-yDia = Polygon(Point(___, winY/2), Point(winX/2,  ), Point(  ,winY/2), Point(winX/2,  ))
-
-
-
+tDia = Polygon(Point( winX/2 - diaSz, winY/2),
+               Point(winX/2, winY/2 + diaSz),
+               Point( winX/2 + diaSz ,winY/2),
+               Point(winX/2, winY/2 - diaSz))
+tDia.setFill(color_rgb(0,250,150))
+tDia.draw(bTriWin)
 
 bTriWin.getMouse()
 bTriWin.close()
